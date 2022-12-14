@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/page.css">
+    <title>一汪無際No Way Home</title>
+</head>
+<header>
+    <input type="checkbox" name="" id="menu_control">
+
+    <div class="header">
+        <h1 class="logo">
+            <a href="index.html">
+                <span>一汪無際:No Way Home</span> 
+            </a>
+            <img src="img/logo.png" alt="">
+        </h1>
+        <label for="menu_control" class="menu_btn">
+            <span>選單</span>
+        </label>
+        <nav>
+            <a href="find.html">尋找浪浪</a>
+            <a href="reserve.html">預約志工</a>
+            <a href="report.html">通報上傳</a>
+            <a href="profile.html">個人檔案</a>
+        </nav>
+        <button class="exit"   onclick="document.getElementById('id01').style.display='block'">登入</button>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+            <div class="login-wrap" >
+                    <div class="login-html">
+                        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">登入</label>
+                        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">註冊</label>
+                        <div class="login-form">
+                            
+                            <div class="sign-in-htm">
+                                <div class="group">
+                                    <label for="user" class="label">Email</label>
+                                    <input id="user" type="email" class="input" name="user" required='required'>
+                                </div>
+                                <div class="group">
+                                    <label for="pass" class="label">Password</label>
+                                    <input id="pass" type="password" class="input" data-type="password" name="pwd" required='required'>
+                                </div>
+                                
+                                <div class="group">
+                                <a href="dog.html"> 
+                                    <input type="submit" class="button" value="登入">
+                                </a>
+                                </div>
+                            </div>
+                            
+                            <div class="sign-up-htm">
+                                <div class="group">
+                                    <label for="user" class="label">Username</label>
+                                    <input id="user" type="text" class="input" name="name" required='required'>
+                                </div>
+                                <div class="group">
+                                    <label for="pass" class="label">Password</label>
+                                    <input id="pass" type="password" class="input" data-type="password" name="pwd" required='required'>
+                                </div>
+                                
+                                <div class="group">
+                                    <label for="pass" class="label">Email Address</label>
+                                    <input id="email" type="email" class="input" name="email" required='required'>
+                                </div>
+                                <div class="group">
+                                    <input type="submit" class="button" value="註冊">
+                                </div>
+                            </div>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+</header>
+<body>
+    <div class="revise">
+        <div id="add" class="tabcontent">
+        <button class="back"><img class="backimg" src="img/left-arrow.png" alt="" onclick="history.back()"></button>
+        <input type ="button" class="revisebtn" value="完成"  onclick="openPage('add', this, '')" id="defaultOpen"></input>
+        <input type ="button" class="revisebtn2" value="編輯" onclick="openPage('add2', this, '')" ></input>
+        <div class="revisemsg">
+            <div class="revisewrap">
+                <div class="reviseleft">
+                    <img src="img/happy.png" alt="">
+                </div>
+                <div class="reviseright">
+                    <p class="user">阿明</p>
+                    <p class="number">會員編號：A00089</p>
+                    <p class="number">註冊日期：110.06.17</p>
+                </div>
+            </div>
+        </div>
+        
+     
+        <div class="revise_detail">
+            <div class="detail">
+                <div class="detailleft">
+                    <label for="">帳號：</label>
+                </div>
+                <div class="detailright">
+                    <label for="">abc778</label>
+                </div>
+            </div>
+        </div>
+        <div class="revise_detail">
+            <div class="detail">
+                <div class="detailleft">
+                    <label for="">密碼：</label>
+                </div>
+                <div class="detailright">
+                    <label for="">
+                        <a href="#">></a>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="revise_detail">
+            <div class="detail">
+                <div class="detailleft">
+                    <label for="">暱稱：</label>
+                </div>
+                <div class="detailright">
+                    <label for="">阿明</label>
+                </div>
+            </div>
+        </div>
+        <div class="revise_detail">
+            <div class="detail">
+                <div class="detailleft">
+                    <label for="">手機：</label>
+                </div>
+                <div class="detailright">
+                    <label for="">0953212548</label>
+                </div>
+            </div>
+        </div>
+        <div class="revise_detail">
+            <div class="detail">
+                <div class="detailleft">
+                    <label for="">生日：</label>
+                </div>
+                <div class="detailright">
+                    <label for="">89.03.04</label>
+                </div>
+            </div>
+        </div>
+   
+        </div>
+
+        <div id="add2" class="tabcontent">
+            <input type ="button" class="back" onclick="history.back()" value="<"></input>
+            <div class="revisemsg">
+                <div class="revisewrap">
+                    <div class="reviseleft">
+                        <img src="img/happy.png" alt="">
+                    </div>
+                    <div class="reviseright">
+                        <p class="user">阿明</p>
+                        <p class="number">會員編號：A00089</p>
+                        <p class="number">註冊日期：110.06.17</p>
+                    </div>
+                </div>
+            </div>
+            <form action="profile3.html">
+            <div class="revise_detail">
+                <div class="detail">
+                    <div class="detailleft">
+                        <label for="">帳號：</label>
+                    </div>
+                    <div class="detailright">
+                        <input type="email"  value="abc778" onfocus="javascript:if(this.value=='輸入內容')this.value='';" name="name" required='required'>
+                    </div>
+                </div>
+            </div>
+            <div class="revise_detail">
+                <div class="detail">
+                    <div class="detailleft">
+                        <label for="">密碼：</label>
+                    </div>
+                    <div class="detailright">
+                        <label for="">
+                            <a href="#"><img class="backimg" src="img/right-arrow.png" alt=""></a>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="revise_detail">
+                <div class="detail">
+                    <div class="detailleft">
+                        <label for="">暱稱：</label>
+                    </div>
+                    <div class="detailright">
+                        <input type="text" value="阿明" onfocus="javascript:if(this.value=='輸入內容')this.value='';" name="name" required='required'>
+                    </div>
+                </div>
+            </div>
+            <div class="revise_detail">
+                <div class="detail">
+                    <div class="detailleft">
+                        <label for="">手機：</label>
+                    </div>
+                    <div class="detailright">
+                        <input type="text" value="0953212548" onfocus="javascript:if(this.value=='輸入內容')this.value='';" name="name" required='required'>
+                    </div>
+                </div>
+            </div>
+            <div class="revise_detail">
+                <div class="detail">
+                    <div class="detailleft">
+                        <label for="">生日：</label>
+                    </div>
+                    <div class="detailright">
+                        <input type="text" value="89.03.04" onfocus="javascript:if(this.value=='輸入內容')this.value='';" name="name" required='required'>
+                    </div>
+                </div>
+            </div>
+            <input type ="button" class="revisebtn3" value="完成"  onclick="openPage('add', this, '')" id="defaultOpen"></input>
+            </form>
+            </div>
+
+    </div>
+
+</body>
+
+
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+<script>
+    function openPage(pageName, elmnt, color) {
+        // Hide all elements with class="tabcontent" by default */
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+        }
+    
+        // Remove the background color of all tablinks/buttons
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+        }
+    
+        // Show the specific tab content
+        document.getElementById(pageName).style.display = "block";
+    
+        // Add the specific color to the button used to open the tab content
+        elmnt.style.backgroundColor = color;
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+
+</html>

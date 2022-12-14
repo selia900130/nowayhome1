@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/upload.css">
+    <link rel="stylesheet" href="css/form.css">
+
+    
+    <title>一汪無際No Way Home</title>
+</head>
+<header>
+    <input type="checkbox" name="" id="menu_control">
+
+    <div class="header">
+        <h1 class="logo">
+            <a href="index.html">
+                <span>一汪無際:No Way Home</span> 
+            </a>
+            <img src="img/logo.png" alt="">
+        </h1>
+        <label for="menu_control" class="menu_btn">
+            <span>選單</span>
+        </label>
+        <nav>
+            <a href="find.html">尋找浪浪</a>
+            <a href="reserve.html">預約志工</a>
+            <a href="report.html">通報上傳</a>
+            <a href="profile.html">個人檔案</a>
+        </nav>
+        <button class="exit"   onclick="document.getElementById('id01').style.display='block'">登入</button>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+            <div class="login-wrap" >
+                    <div class="login-html">
+                        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">登入</label>
+                        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">註冊</label>
+                        <div class="login-form">
+                            
+                            <div class="sign-in-htm">
+                                <div class="group">
+                                    <label for="user" class="label">Email</label>
+                                    <input id="user" type="email" class="input" name="user" required='required'>
+                                </div>
+                                <div class="group">
+                                    <label for="pass" class="label">Password</label>
+                                    <input id="pass" type="password" class="input" data-type="password" name="pwd" required='required'>
+                                </div>
+                                
+                                <div class="group">
+                                <a href="dog.html"> 
+                                    <input type="submit" class="button" value="登入">
+                                </a>
+                                </div>
+                            </div>
+                            
+                            <div class="sign-up-htm">
+                                <div class="group">
+                                    <label for="user" class="label">Username</label>
+                                    <input id="user" type="text" class="input" name="name" required='required'>
+                                </div>
+                                <div class="group">
+                                    <label for="pass" class="label">Password</label>
+                                    <input id="pass" type="password" class="input" data-type="password" name="pwd" required='required'>
+                                </div>
+                                
+                                <div class="group">
+                                    <label for="pass" class="label">Email Address</label>
+                                    <input id="email" type="email" class="input" name="email" required='required'>
+                                </div>
+                                <div class="group">
+                                    <input type="submit" class="button" value="註冊">
+                                </div>
+                            </div>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+</header>
+<style>
+input[type="submit"]{padding:5px 15px; background:#455438; color:rgb(255, 255, 255);border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 20px;
+margin-top: 10px;
+margin-left: 60px; }
+    input[type="text"]{padding:5px 15px; background:#e1e4de; border:3px #455438 solid;
+cursor:pointer;
+-webkit-border-radius: 5px;
+border-radius: 20px; }
+</style>
+<body>
+    
+    <div class="up2">
+        <form class="repo2">
+            <form action="/formprocess.php" method="post">
+
+                <p class=>Name:</p>
+                <p><input type="text" name="name" value="" id="yourname" required></p>
+                <div>
+                    <label>性別：</label><br>
+                    <input type="radio" name="gender" id="male" value="boy" required>
+                    <label for="male">男生</label>
+                    <input type="radio" name="gender" id="female" value="girl" required>
+                    <label for="female">女生</label>
+                </div>
+                <label for="start"  required>年齡:</label>
+
+                <div><input type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="1900-01-01" max="2018-12-31"> </div>
+                
+       
+                <p>Email:</p>
+                <p><input name="species" type="text"  required></p>
+            
+                <p>未來您與狗狗居住的地址</p>
+                <p><input name="text" type="text" required></p>
+
+                <p>連絡電話:</p>
+                <p><input name="species" type="text" required></p>
+                <p>
+                    
+                    <p>認養資格：</p>
+                     <div> <input type="radio" name="ecom" id="male" value="boy" required>
+                        <label for="male">有照顧狗狗的經濟能力</label></div>
+                    <div><input type="radio" name="sb" id="male" value="boy" required>
+                        <label for="male">領養者必須同意永遠善待狗狗，並確保狗狗的健康與安全</label></div>
+                    
+                
+                    
+                    </p>
+                   <!--領養申請流程
+                    以下是領養狗狗的步驟：
+                    1. 查看等待領養的狗狗
+                    
+                    2. 填寫領養諮詢表
+                    
+                    3. 參加領養工作坊（團隊成員會連絡您）
+                    
+                    4. 安置專員將安排您與狗狗見面、進行面談和參觀您的家（面對面或線上）
+                    
+                    5. 如果適合，我們會安排一個星期的試養
+                    
+                    6. 如果試養順利，我們會請您簽署領養合約，然後再將狗狗的晶片轉移到您的名下-->
+            
+                <p><input type="submit" value="資料無誤 下一頁!" onclick="location.href='notice.html'"></p>
+                
+            </form>
+            </form>
+            </div>
+           
+
+</body>
+
+
+
+<script>
+
+    l = document.getElementById('id01');
+    
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<!--位置-->
+<script>
+    var x = document.getElementById("demo");
+    
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+    
+    function showPosition(position) {
+      x.innerHTML = "經度: " + position.coords.latitude + "°"+"<br>緯度: " + position.coords.longitude+"°";
+    }
+    </script>
+
+
+    
+
+
+    
+
+
+</html>

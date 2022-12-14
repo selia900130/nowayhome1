@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/find.css">
+    <title>一汪無際No Way Home</title>
+</head>
+<header>
+    <input type="checkbox" name="" id="menu_control">
+
+    <div class="header">
+        <h1 class="logo">
+            <a href="index.html">
+                <span>一汪無際:No Way Home</span> 
+            </a>
+            <img src="img/logo.png" alt="">
+        </h1>
+        <label for="menu_control" class="menu_btn">
+            <span>選單</span>
+        </label>
+        <nav>
+            <a href="find.html">尋找浪浪</a>
+            <a href="reserve.html">預約志工</a>
+            <a href="report.html">通報上傳</a>
+            <a href="profile.html">個人檔案</a>
+        </nav>
+        <button class="exit"   onclick="document.getElementById('id01').style.display='block'">登入</button>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+            <div class="login-wrap" >
+                    <div class="login-html">
+                        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">登入</label>
+                        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">註冊</label>
+                        <div class="login-form">
+                            
+                            <div class="sign-in-htm">
+                                <div class="group">
+                                    <label for="user" class="label">Email</label>
+                                    <input id="user" type="email" class="input" name="user" required='required'>
+                                </div>
+                                <div class="group">
+                                    <label for="pass" class="label">Password</label>
+                                    <input id="pass" type="password" class="input" data-type="password" name="pwd" required='required'>
+                                </div>
+                                
+                                <div class="group">
+                                <a href="dog.html"> 
+                                    <input type="submit" class="button" value="登入">
+                                </a>
+                                </div>
+                            </div>
+                            
+                            <div class="sign-up-htm">
+                                <div class="group">
+                                    <label for="user" class="label">Username</label>
+                                    <input id="user" type="text" class="input" name="name" required='required'>
+                                </div>
+                                <div class="group">
+                                    <label for="pass" class="label">Password</label>
+                                    <input id="pass" type="password" class="input" data-type="password" name="pwd" required='required'>
+                                </div>
+                                
+                                <div class="group">
+                                    <label for="pass" class="label">Email Address</label>
+                                    <input id="email" type="email" class="input" name="email" required='required'>
+                                </div>
+                                <div class="group">
+                                    <input type="submit" class="button" value="註冊">
+                                </div>
+                            </div>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+</header>
+<body>
+    <button class="back"><img class="backimg" src="img/left-arrow.png" alt="" onclick="history.back()"></button>
+    <section class="condition">
+
+        <div class="condtion-card">
+            <p>找汪汪:</p>
+            <div id="radio">
+                <label><input type="radio" name="ownerchoose_condtion1" value="幼犬" checked="checked">
+                    <span class="round button">幼犬</span></label>
+                <label><input type="radio" name="ownerchoose_condtion1" value="成犬" checked="checked">
+                    <span class="round button">成犬</span></label>
+                <label><input type="radio" name="ownerchoose_condtion" value="長毛" checked="checked">
+                    <span class="round button">長毛</span></label>
+                <label><input type="radio" name="ownerchoose_condtion" value="短毛" checked="checked">
+                    <span class="round button">短毛</span></label>
+            </div>
+        </div>
+        <style>
+            #radio input[type="radio"] {display: none; }
+            #radio input:checked + .button {background: #5e7380; color: #fff; cursor: default;}
+            #radio .button {display: inline-block; margin: 0 5px 10px 0; padding: 5px 10px; background: #f7f7f7; color: #333; cursor: pointer; }
+            #radio .button:hover {background: #bbb; color: #fff; }
+            #radio .round {border-radius: 5px; }
+        </style>
+
+        <div class="condtion-card">
+            <p>汪汪個性:</p>
+            <div id="radio">
+                <label><input type="radio" name="personalitychoose_condtion" value="害羞" checked="checked">
+                    <span class="round button">害羞</span></label>
+                <label><input type="radio" name="personalitychoose_condtion" value="活潑" checked="checked">
+                    <span class="round button">活潑</span></label>
+                <label><input type="radio" name="personalitychoose_condtion" value="親人" checked="checked">
+                    <span class="round button">親人</span></label>
+                <label><input type="radio" name="personalitychoose_condtion" value="怕生" checked="checked">
+                    <span class="round button">怕生</span></label>
+            </div>
+        </div>
+        <style>
+            #radio input[type="radio"] {display: none; }
+            #radio input:checked + .button {background: #5e7380; color: #fff; cursor: default;}
+            #radio .button {display: inline-block; margin: 0 5px 10px 0; padding: 5px 10px; background: #f7f7f7; color: #333; cursor: pointer; }
+            #radio .button:hover {background: #bbb; color: #fff; }
+            #radio .round {border-radius: 5px; }
+        </style>  
+
+ 
+        <div class="condtion-card">
+        <p>家中格局:</p>
+        <div id="radio">
+            <label><input type="radio" name="straydogchoosehouse_condtion" value="透天" checked="checked">
+                <span class="round button">透天</span></label>
+            <label><input type="radio" name="straydogchoosehouse_condtion" value="公寓" checked="checked">
+                <span class="round button">公寓</span></label>
+            <label><input type="radio" name="straydogchoosehouse_condtion" value="大樓" checked="checked">
+                <span class="round button">大樓</span></label>
+            <label><input type="radio" name="straydogchoosehouse_condtion" value="別墅" checked="checked">
+                <span class="round button">別墅</span></label>
+          </div>
+        </div>
+        <style>
+            #radio input[type="radio"] {display: none; }
+            #radio input:checked + .button {background: #5e7380; color: #fff; cursor: default; }
+            #radio .button {display: inline-block; margin: 0 5px 10px 0; padding: 5px 10px; background: #f7f7f7; color: #333; cursor: pointer; }
+            #radio .button:hover {background: #bbb; color: #fff; }
+            #radio .round {border-radius: 5px; }
+            </style>
+
+        <div class="condtion-card">
+        <p>家中成員:</p>
+        <div id="radio">
+            <label><input type="radio" name="straydogchoosefamilymember_condtion" value="頂客" checked="checked">
+                <span class="round button">頂客</span>
+            </label>
+            <label><input type="radio" name="straydogchoosefamilymember_condtion" value="有小孩" checked="checked">
+                <span class="round button">有小孩</span>
+            </label>
+            <label><input type="radio" name="straydogchoosefamilymember_condtion" value="單身" checked="checked">
+                <span class="round button">單身</span>
+            </label>
+            <label><input type="radio" name="straydogchoosefamilymember_condtion" value="有其他寵物" checked="checked">
+                <span class="round button">已有寵物</span>
+            </label>
+        </div>
+        </div>
+        <style>
+            #radio input[type="radio"] {display: none; }
+            #radio input:checked + .button {background: #ad987d; color: #fff; cursor: default; }
+            #radio .button {display: inline-block; margin: 0 5px 10px 0; padding: 5px 10px; background: #f7f7f7; color: #333; cursor: pointer; }
+            #radio .button:hover {background: #bbb; color: #fff; }
+            #radio .round {border-radius: 5px; }
+            </style>
+        
+          <br>
+        
+          
+        <button class="pair-button" ><a href="pair.html">
+            <p class="buttontext-pair">配對!</p></a></button>
+    </section>
+    <br>
+    <section>
+    <p class="text_needhome">還有這些浪浪需要一個家!</p>
+</section>
+
+    <br>
+  <section class="wrap">
+<div class="straydog-card">
+    <div class="straydog-card_status">
+    台南市流浪動物愛護協會
+    </div>
+    <div class="straydog-card_name">
+        小牛
+    </div>
+    <div class="straydog-card_description">
+        有黑白花紋，是帥氣的小男生
+    </div>
+    <figure class="straydog-card_image">
+        <img src="img/straydog3.webp">
+
+    </figure>
+    <footer class="straydog-card_footer">
+        <div class="straydog-card_text">
+           將出席XX活動!
+        </div>
+        <button class="straydog-card_choose">
+            查看
+        </button>
+    </footer>
+</div>
+<div class="straydog-card">
+    <div class="straydog-card_status">
+    苗栗縣生態保育教育中心
+    </div>
+    <div class="straydog-card_name">
+        小白
+    </div>
+    <div class="straydog-card_description">
+       是在街頭流浪很久的孩子，想找一個家
+    </div>
+    <figure class="straydog-card_image">
+        <img src="img/straydog6.jpg">
+
+    </figure>
+    <footer class="straydog-card_footer">
+        <div class="straydog-card_text">
+           與您條件相近!
+        </div>
+        <button class="straydog-card_choose">
+            查看!
+        </button>
+    </footer>
+</div>
+<div class="straydog-card">
+    <div class="straydog-card_status">
+    板橋動物之家
+    </div>
+    <div class="straydog-card_name">
+        亮亮
+    </div>
+    <div class="straydog-card_description">
+        較易興奮，需要人們的關注
+    </div>
+    <figure class="straydog-card_image">
+        <img src="img/straydog10.jpg">
+
+    </figure>
+    <footer class="straydog-card_footer">
+        <div class="straydog-card_text">
+           將出席XX活動
+        </div>
+        <button class="straydog-card_choose">
+            查看!
+        </button>
+    </footer>
+</div>
+<div class="straydog-card">
+    <div class="straydog-card_status">
+   桃園流浪動物之家
+    </div>
+    <div class="straydog-card_name">
+        小黃
+    </div>
+    <div class="straydog-card_description">
+        個性較活潑外向，是狗狗們也是人類的好玩伴
+    </div>
+    <figure class="straydog-card_image">
+        <img src="img/straydog1.jpg">
+
+    </figure>
+    <footer class="straydog-card_footer">
+        <div class="straydog-card_text">
+           您曾配對過牠!
+        </div>
+        <button class="straydog-card_choose">
+            查看!
+        </button>
+    </footer>
+</div>
+</section>
+  </section> 
+</body>
+
+
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+
+
+</html>

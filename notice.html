@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/upload.css">
+    <link rel="stylesheet" href="css/form.css">
+
+    
+    <title>一汪無際No Way Home</title>
+</head>
+<header>
+    <input type="checkbox" name="" id="menu_control">
+
+    <div class="header">
+        <h1 class="logo">
+            <a href="index.html">
+                <span>一汪無際:No Way Home</span> 
+            </a>
+            <img src="img/logo.png" alt="">
+        </h1>
+        <label for="menu_control" class="menu_btn">
+            <span>選單</span>
+        </label>
+        <nav>
+            <a href="find.html">尋找浪浪</a>
+            <a href="reserve.html">預約志工</a>
+            <a href="report.html">通報上傳</a>
+            <a href="profile.html">個人檔案</a>
+        </nav>
+        <button class="exit"   onclick="document.getElementById('id01').style.display='block'">登入</button>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+            <div class="login-wrap" >
+                    <div class="login-html">
+                        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">登入</label>
+                        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">註冊</label>
+                        <div class="login-form">
+                            
+                            <div class="sign-in-htm">
+                                <div class="group">
+                                    <label for="user" class="label">Email</label>
+                                    <input id="user" type="email" class="input" name="user" required='required'>
+                                </div>
+                                <div class="group">
+                                    <label for="pass" class="label">Password</label>
+                                    <input id="pass" type="password" class="input" data-type="password" name="pwd" required='required'>
+                                </div>
+                                
+                                <div class="group">
+                                <a href="dog.html"> 
+                                    <input type="submit" class="button" value="登入">
+                                </a>
+                                </div>
+                            </div>
+                            
+                            <div class="sign-up-htm">
+                                <div class="group">
+                                    <label for="user" class="label">Username</label>
+                                    <input id="user" type="text" class="input" name="name" required='required'>
+                                </div>
+                                <div class="group">
+                                    <label for="pass" class="label">Password</label>
+                                    <input id="pass" type="password" class="input" data-type="password" name="pwd" required='required'>
+                                </div>
+                                
+                                <div class="group">
+                                    <label for="pass" class="label">Email Address</label>
+                                    <input id="email" type="email" class="input" name="email" required='required'>
+                                </div>
+                                <div class="group">
+                                    <input type="submit" class="button" value="註冊">
+                                </div>
+                            </div>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+</header>
+<style>
+input[type="sub"]{padding:5px 15px; background:#76651b; color:rgb(255, 255, 255);border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    margin-left: 50px;
+    text-align: center;
+    border-radius: 20px; }
+   
+</style>
+<body>
+    
+    <div class="up3">
+        <form class="repo2">
+            <form action="/formprocess.php" method="post">
+
+                    <div class="notice"><p>！領養申請流程！</p><br>
+                    <p>以下是領養狗狗的步驟：</p><br>
+                <p>1. 和狗狗進行配對</p>
+                    
+                <p>2. 填寫領養諮詢表</p>
+                    
+                    <p> 3. 參加領養狗狗有參加的志工活動（團隊成員會連絡您）</p>
+                    
+                        <p>  4. 安置專員將安排您與狗狗見面、進行面談和參觀您的家（面對面或線上）</p>
+                    
+                            <p>  5. 倘若適合，我們會安排一個星期的試養</p>
+                    
+                                <p>  6. 若試養順利，我們會請您簽署正式領養合約，然後再將狗狗的晶片轉移到您的名下<br><br></p></div>
+
+         <p><input type="sub" value="已了解，確認領養!" onclick="location.href='submitpair.html'"></p>
+                
+            </form>
+            </form>
+            </div>
+           
+
+</body>
+
+
+
+<script>
+
+    l = document.getElementById('id01');
+    
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<!--位置-->
+<script>
+    var x = document.getElementById("demo");
+    
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+    
+    function showPosition(position) {
+      x.innerHTML = "經度: " + position.coords.latitude + "°"+"<br>緯度: " + position.coords.longitude+"°";
+    }
+    </script>
+
+
+    
+
+
+    
+
+
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/reserve.css">
+    
+    <title>一汪無際No Way Home</title>
+</head>
+<header>
+    <input type="checkbox" name="" id="menu_control">
+
+    <div class="header">
+        <h1 class="logo">
+            <a href="index.html">
+                <span>一汪無際:No Way Home</span> 
+            </a>
+            <img src="img/logo.png" alt="">
+        </h1>
+        <label for="menu_control" class="menu_btn">
+            <span>選單</span>
+        </label>
+        <nav>
+            <a href="find.html">尋找浪浪</a>
+            <a href="reserve.html">預約志工</a>
+            <a href="report.html">通報上傳</a>
+            <a href="profile.html">個人檔案</a>
+        </nav>
+        <button class="exit"   onclick="document.getElementById('id01').style.display='block'">登入</button>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+            <div class="login-wrap" >
+                    <div class="login-html">
+                        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">登入</label>
+                        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">註冊</label>
+                        <div class="login-form">
+                            
+                            <div class="sign-in-htm">
+                                <div class="group">
+                                    <label for="user" class="label">Email</label>
+                                    <input id="user" type="email" class="input" name="user" required='required'>
+                                </div>
+                                <div class="group">
+                                    <label for="pass" class="label">Password</label>
+                                    <input id="pass" type="password" class="input" data-type="password" name="pwd" required='required'>
+                                </div>
+                                
+                                <div class="group">
+                                <a href="dog.html"> 
+                                    <input type="submit" class="button" value="登入">
+                                </a>
+                                </div>
+                            </div>
+                            
+                            <div class="sign-up-htm">
+                                <div class="group">
+                                    <label for="user" class="label">Username</label>
+                                    <input id="user" type="text" class="input" name="name" required='required'>
+                                </div>
+                                <div class="group">
+                                    <label for="pass" class="label">Password</label>
+                                    <input id="pass" type="password" class="input" data-type="password" name="pwd" required='required'>
+                                </div>
+                                
+                                <div class="group">
+                                    <label for="pass" class="label">Email Address</label>
+                                    <input id="email" type="email" class="input" name="email" required='required'>
+                                </div>
+                                <div class="group">
+                                    <input type="submit" class="button" value="註冊">
+                                </div>
+                            </div>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+</header>
+<body>
+  <button class="back"><img class="backimg" src="img/left-arrow.png" alt="" onclick="history.back()"></button>
+    <div class="shape">
+      <div class="dropdown">
+        <div class="select">
+          <span class="selected">請選擇單位</span>
+          <div class="caret"></div>
+        </div>
+        <ul class="menu">
+          <li>桃園市動保教育園區</li>
+          <li>新竹市動物保護教育園區</li>
+          <li>板橋動物之家</li>
+          <li>台南市流浪動物愛護協會</li>
+          <li>苗栗縣生態保育教育中心</li>
+          <li>高雄市流浪動物保育協會</li>
+        </ul>
+      </div>
+  
+      <div class="dropdown">
+        <div class="select">
+          <span class="selected">請選擇日期</span>
+          <div class="caret"></div>
+        </div>
+        <ul class="menu">
+          <li>2022.10.01</li>
+          <li>2022.10.02</li>
+          <li>2022.10.03</li>
+          <li>2022.10.04</li>
+          <li>2022.10.05</li>
+          <li>2022.10.06</li>
+        </ul>
+      </div>
+     
+      <div class="dropdown">
+        <div class="select">
+          <span class="selected">請選擇時段</span>
+          <div class="caret"></div>
+        </div>
+        <ul class="menu">
+          <li>8:00-10:00</li>
+          <li>10:00-12:00</li>
+          <li>13:00-15:00</li>
+          <li>15:00-17:00</li>
+        </ul>
+      </div>
+
+         
+      <script src="time.js"></script>
+
+            <button type="submit" class="checkbtn" onclick="openPopup()">確認預約</button>
+            <div class="popup" id="popup">
+              <img src="img/tick.png">
+              <h2>Thank You!</h2>
+              <P>您已成功預約！</P>
+              <button type="button" onclick="closePopup()">OK</button>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+    <div class="column">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/volunteer1.jpg">
+          <h3>桃園市動保教育園區</h3><br>
+          <p>週末送養志工<br>協助維持環境清潔  |  協助犬隻運送</p>
+          </div>
+          <div class="flip-card-back">
+              <img src="img/back1.png" width="100%" height="100%" >
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      <div class="column">
+      <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/volunteer2.jpg">
+            <h3>新竹市動物保護教育園區</h3><br>
+            <p>狗園打掃志工<br>協助清掃狗區  |  物資整理收納</p>
+            </div>
+            <div class="flip-card-back">
+                <img src="img/back2.png" width="100%" height="100%" >
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column">
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="img/volunteer3.jpg">
+                <h3>板橋動物之家</h3><br>
+                <p>一日志工<br>牽狗散步  ｜  互動觀察記錄 ｜  餵食紀錄 </p>
+                </div>
+                <div class="flip-card-back">
+                    <img src="img/back1.png" width="100%" height="100%" >
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="column">
+              <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="img/volunteer4.jpg">
+                    <h3>台南市流浪動物愛護協會</h3><br>
+                    <p>住院室志工 |  浪犬恢復室打掃<br>牽狗散步  ｜  互動觀察記錄 ｜  餵食紀錄</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="img/back2.png" width="100%" height="100%" >
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+      
+              <div class="column">
+                  <div class="flip-card">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="img/volunteer5.jpg">
+                        <h3>苗栗縣生態保育教育中心</h3><br>
+                        <p>志願服務<br>參訪活動導覽 ｜ 拍攝網路媒體行銷</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="img/back1.png" width="100%" height="100%" >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="column">
+                      <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="img/volunteer6.jpg">
+                            <h3>高雄市流浪動物保育協會</h3><br>
+                            <p>寒暑假志工服務<br>協助行政作業  ｜  整理捐贈物資</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="img/back2.png" width="100%" height="100%" >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+</body>
+
+
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+             
+</script>
+<script>
+  let popup = document.getElementById("popup");
+  
+  function openPopup(){
+    popup.classList.add("open-popup");
+  }
+  function closePopup(){
+    popup.classList.remove("open-popup");
+  }
+
+  </script>
+ 
+</html>
+
+

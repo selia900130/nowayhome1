@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/pair.css">
+    <script src="pair.js"> </script>
+    <title>一汪無際No Way Home</title>
+</head>
+<header>
+    <input type="checkbox" name="" id="menu_control">
+
+    <div class="header">
+        <h1 class="logo">
+            <a href="index.html">
+                <span>一汪無際:No Way Home</span> 
+            </a>
+            <img src="img/logo.png" alt="">
+        </h1>
+        <label for="menu_control" class="menu_btn">
+            <span>選單</span>
+        </label>
+        <nav>
+            <a href="find.html">尋找浪浪</a>
+            <a href="reserve.html">預約志工</a>
+            <a href="report.html">通報上傳</a>
+            <a href="profile.html">個人檔案</a>
+        </nav>
+        <button class="exit"   onclick="document.getElementById('id01').style.display='block'">登入</button>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+            <div class="login-wrap" >
+                    <div class="login-html">
+                        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">登入</label>
+                        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">註冊</label>
+                        <div class="login-form">
+                            
+                            <div class="sign-in-htm">
+                                <div class="group">
+                                    <label for="user" class="label">Email</label>
+                                    <input id="user" type="email" class="input" name="user" required='required'>
+                                </div>
+                                <div class="group">
+                                    <label for="pass" class="label">Password</label>
+                                    <input id="pass" type="password" class="input" data-type="password" name="pwd" required='required'>
+                                </div>
+                                
+                                <div class="group">
+                                <a href="dog.html"> 
+                                    <input type="submit" class="button" value="登入">
+                                </a>
+                                </div>
+                            </div>
+                            
+                            <div class="sign-up-htm">
+                                <div class="group">
+                                    <label for="user" class="label">Username</label>
+                                    <input id="user" type="text" class="input" name="name" required='required'>
+                                </div>
+                                <div class="group">
+                                    <label for="pass" class="label">Password</label>
+                                    <input id="pass" type="password" class="input" data-type="password" name="pwd" required='required'>
+                                </div>
+                                
+                                <div class="group">
+                                    <label for="pass" class="label">Email Address</label>
+                                    <input id="email" type="email" class="input" name="email" required='required'>
+                                </div>
+                                <div class="group">
+                                    <input type="submit" class="button" value="註冊">
+                                </div>
+                            </div>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+</header>
+<body>
+    
+  <section class="wrap">
+<div class="straydog-card">
+    <div class="straydog-card_status">
+    桃園流浪動物之家
+    </div>
+    <div class="straydog-card_name">
+        小黃
+    </div>
+    <div class="straydog-card_description">
+        個性較活潑外向，喜歡玩球，親人，善於照顧其他狗狗，是狗狗們也是人類的好玩伴
+    </div>
+    <figure class="straydog-card_image">
+        <img src="img/straydog1.jpg">
+    </figure>
+
+  
+    <div class="hashtag">幼犬</div>
+    <div class="hashtag">短毛</div>
+    <div class="hashtag">透天</div>
+    <div class="hashtag">有小孩</div>
+    <div class="hashtag">已有寵物</div>
+
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+      </div>
+    <footer class="straydog-card_footer">
+        <button type="button"  name="submit_Btn"  id="submit_Btn3" onClick="document.form1.submit()"><img  src="img/icon3.png"></button>
+        <button type="button"   id="submit_Btn1" onclick="document.getElementById('id02').style.display='block'"><img  src="img/icon1.png"></button>
+        <div id="id02" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+            <div class="moredescription-wrap" >
+                    <div class="moredescription-html">
+                        <figure class="moredescription_image">
+                            <img src="img/straydog1.jpg">
+                        </figure>
+                        <div class="mdname">
+                            小黃
+                        </div>
+                        <div class="md_location">
+                            <input type="image" id="location_icon" src="img/地標.png" width="40px">
+                            <div class=relativelocation>
+                            
+                            Taiwan/Taoyuan
+                        </div>
+                        
+                        </div>
+                        <div class="moredescrition">
+                            近期將出席XX活動!
+                        </div>
+
+                        <div class="dogg">
+                        <div class="dogyear" style="display:inline;">年齡</div>
+                        <div class="dogsex" style="display:inline;">性別</div>
+                        <div class="dogweight" style="display:inline;">體重</div>
+                       </div>
+
+                       <div class="dogg2">
+                        <div class="dogyear2" style="display:inline;">1Year</div>
+                        <div class="dogsex2" style="display:inline;">Male</div>
+                        <div class="dogweight2" style="display:inline;">3Kg</div>
+                       </div>
+
+                       <div class="dogg3">
+                        <div class="dogchip1" style="display:inline;">V晶片</div>
+                        <div class="dogligation1" style="display:inline;">V結紮</div>
+                        <div class="dogvaccine1" style="display:inline;">V疫苗</div>
+                       </div>
+
+                       <div class="takemehome">
+                        <input type="button" class="takemehomebutn" style="display:inline;" onclick="location.href='form.html'" value="帶我回家" />
+                              
+                        <input type="button" class="heartbutn" style="display:inline;" onclick="location.href='fav_list.html'" value="❤">
+                           
+                        </a>
+                        </button>
+
+                       </div>
+                       
+
+
+                        <div class="moredescription-form">
+                            
+                            
+                            
+                            
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+        <button type="button"  name="submit_Btn"  id="submit_Btn2" onclick="showalert()"><img  src="img/icon2.png"></a></button>
+    </footer>
+</div>
+
+
+<div class="straydog-card">
+    <div class="straydog-card_status">
+    板橋動物之家
+    </div>
+    <div class="straydog-card_name">
+        皮皮
+    </div>
+    <div class="straydog-card_description">
+        比較內向，喜歡自己窩在角落，但是個聽話的乖孩子
+    </div>
+    <figure class="straydog-card_image">
+        <img src="img/straydog5.jpg">
+    </figure>
+
+  
+    <div class="hashtag">成犬</div>
+    <div class="hashtag">短毛</div>
+    <div class="hashtag">大樓</div>
+    <div class="hashtag">單身</div>
+ 
+
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width:50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+      </div>
+    <footer class="straydog-card_footer">
+        <button type="button"  name="submit_Btn"  id="submit_Btn3" onClick="document.form1.submit()"><img  src="img/icon3.png"></button>
+        <button type="button"   id="submit_Btn1" onclick="document.getElementById('id02').style.display='block'"><img  src="img/icon1.png"></button>
+        <div id="id02" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+            <div class="moredescription-wrap" >
+                    <div class="moredescription-html">
+                        <figure class="moredescription_image">
+                            <img src="img/straydog5.jpg">
+                        </figure>
+                        <div class="mdname">
+                            皮皮
+                        </div>
+                        <div class="md_location">
+                            <input type="image" id="location_icon" src="img/地標.png" width="40px">
+                            <div class=relativelocation>
+                            
+                            Taiwan/Taipei
+                        </div>
+                        
+                        </div>
+                        <div class="moredescrition">
+                            近期將出席XX活動!
+                        </div>
+
+                        <div class="dogg">
+                        <div class="dogyear" style="display:inline;">年齡</div>
+                        <div class="dogsex" style="display:inline;">性別</div>
+                        <div class="dogweight" style="display:inline;">體重</div>
+                       </div>
+
+                       <div class="dogg2">
+                        <div class="dogyear2" style="display:inline;">6Year</div>
+                        <div class="dogsex2" style="display:inline;">Male</div>
+                        <div class="dogweight2" style="display:inline;">7Kg</div>
+                       </div>
+
+                       <div class="dogg3">
+                        <div class="dogchip1" style="display:inline;">V晶片</div>
+                        <div class="dogligation1" style="display:inline;">V結紮</div>
+                        <div class="dogvaccine1" style="display:inline;">V疫苗</div>
+                       </div>
+
+                       <div class="takemehome">
+                        <input type="button" class="takemehomebutn" style="display:inline;" onclick="location.href='form.html'" value="帶我回家" />
+                              
+                        <input type="button" class="heartbutn" style="display:inline;" onclick="location.href='fav_list.html'" value="❤">
+                           
+                        </a>
+                        </button>
+
+                       </div>
+                       
+
+
+                        <div class="moredescription-form">
+                            
+                            
+                            
+                            
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+        <button type="button"  name="submit_Btn"  id="submit_Btn2" onclick="showalert()"><img  src="img/icon2.png"></a></button>
+    </footer>
+</div>
+<div class="straydog-card">
+    <div class="straydog-card_status">
+    新竹市動物保護教育園區
+    </div>
+    <div class="straydog-card_name">
+        吉利
+    </div>
+    <div class="straydog-card_description">
+        活潑外向，喜歡到處探索，跟小孩玩，是小朋友的大玩伴
+    </div>
+    <figure class="straydog-card_image">
+        <img src="img/straydog4.webp">
+    </figure>
+
+  
+    <div class="hashtag">幼犬</div>
+    <div class="hashtag">長毛</div>
+    <div class="hashtag">透天</div>
+    <div class="hashtag">別墅</div>
+    <div class="hashtag">有小孩</div>
+
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+      </div>
+    <footer class="straydog-card_footer">
+        <button type="button"  name="submit_Btn"  id="submit_Btn3" onClick="document.form1.submit()"><img  src="img/icon3.png"></button>
+        <button type="button"   id="submit_Btn1" onclick="document.getElementById('id02').style.display='block'"><img  src="img/icon1.png"></button>
+        <div id="id02" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+            <div class="moredescription-wrap" >
+                    <div class="moredescription-html">
+                        <figure class="moredescription_image">
+                            <img src="img/straydog1.jpg">
+                        </figure>
+                        <div class="mdname">
+                            吉利
+                        </div>
+                        <div class="md_location">
+                            <input type="image" id="location_icon" src="img/地標.png" width="40px">
+                            <div class=relativelocation>
+                            
+                            Taiwan/Hsinchu
+                        </div>
+                        
+                        </div>
+                        <div class="moredescrition">
+                            近期將出席XX活動!
+                        </div>
+
+                        <div class="dogg">
+                        <div class="dogyear" style="display:inline;">年齡</div>
+                        <div class="dogsex" style="display:inline;">性別</div>
+                        <div class="dogweight" style="display:inline;">體重</div>
+                       </div>
+
+                       <div class="dogg2">
+                        <div class="dogyear2" style="display:inline;">2Year</div>
+                        <div class="dogsex2" style="display:inline;">Female</div>
+                        <div class="dogweight2" style="display:inline;">2Kg</div>
+                       </div>
+
+                       <div class="dogg3">
+                        <div class="dogchip1" style="display:inline;">V晶片</div>
+                        <div class="dogligation1" style="display:inline;">V結紮</div>
+                        <div class="dogvaccine1" style="display:inline;">V疫苗</div>
+                       </div>
+
+                       <div class="takemehome">
+                        <input type="button" class="takemehomebutn" style="display:inline;" onclick="location.href='form.html'" value="帶我回家" />
+                              
+                        <input type="button" class="heartbutn" style="display:inline;" onclick="location.href='fav_list.html'" value="❤">
+                           
+                        </a>
+                        </button>
+
+                       </div>
+                       
+
+
+                        <div class="moredescription-form">
+                            
+                            
+                            
+                            
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+        <button type="button"  name="submit_Btn"  id="submit_Btn2" onclick="showalert()"><img  src="img/icon2.png"></a></button>
+    </footer>
+</div>
+<div class="straydog-card">
+    <div class="straydog-card_status">
+    桃園市動保教育園區
+    </div>
+    <div class="straydog-card_name">
+        搗灰
+    </div>
+    <div class="straydog-card_description">
+        個性比較內向，不敢主動靠近其他狗狗，但很親人，不會隨便吠叫
+    </div>
+    <figure class="straydog-card_image">
+        <img src="img/straydog3.jpg">
+    </figure>
+
+  
+    <div class="hashtag">成犬</div>
+    <div class="hashtag">長毛</div>
+    <div class="hashtag">親人</div>
+    <div class="hashtag">大樓</div>
+    <div class="hashtag">有小孩</div>
+
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+      </div>
+    <footer class="straydog-card_footer">
+        <button type="button"  name="submit_Btn"  id="submit_Btn3" onClick="document.form1.submit()"><img  src="img/icon3.png"></button>
+        <button type="button"   id="submit_Btn1" onclick="document.getElementById('id02').style.display='block'"><img  src="img/icon1.png"></button>
+        <div id="id02" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+            <div class="moredescription-wrap" >
+                    <div class="moredescription-html">
+                        <figure class="moredescription_image">
+                            <img src="img/straydog3.jpg">
+                        </figure>
+                        <div class="mdname">
+                            搗灰
+                        </div>
+                        <div class="md_location">
+                            <input type="image" id="location_icon" src="img/地標.png" width="40px">
+                            <div class=relativelocation>
+                            
+                            Taiwan/Taoyuan
+                        </div>
+                        
+                        </div>
+                        <div class="moredescrition">
+                            近期將出席XX活動!
+                        </div>
+
+                        <div class="dogg">
+                        <div class="dogyear" style="display:inline;">年齡</div>
+                        <div class="dogsex" style="display:inline;">性別</div>
+                        <div class="dogweight" style="display:inline;">體重</div>
+                       </div>
+
+                       <div class="dogg2">
+                        <div class="dogyear2" style="display:inline;">5Years</div>
+                        <div class="dogsex2" style="display:inline;">Male</div>
+                        <div class="dogweight2" style="display:inline;">5Kg</div>
+                       </div>
+
+                       <div class="dogg3">
+                        <div class="dogchip1" style="display:inline;">V晶片</div>
+                        <div class="dogligation1" style="display:inline;">V結紮</div>
+                        <div class="dogvaccine1" style="display:inline;">V疫苗</div>
+                       </div>
+
+                       <div class="takemehome">
+                        <input type="button" class="takemehomebutn" style="display:inline;" onclick="location.href='form.html'" value="帶我回家" />
+                              
+                        <input type="button" class="heartbutn" style="display:inline;" onclick="location.href='fav_list.html'" value="❤">
+                           
+                        </a>
+                        </button>
+
+                       </div>
+                       
+
+
+                        <div class="moredescription-form">
+                            
+                            
+                            
+                            
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+        <button type="button"  name="submit_Btn"  id="submit_Btn2" onclick="showalert()"><img  src="img/icon2.png"></a></button>
+    </footer>
+</div>
+
+</section>
+ 
+</body>
+
+
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    
+     // Get the modal
+     var modal = document.getElementById('id02');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<script>
+function showalert(){
+    alert("收藏成功!");
+  }
+</script>
+
+
+
+</html>
+
